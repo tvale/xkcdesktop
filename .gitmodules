@@ -1,0 +1,3 @@
+[submodule "subprojects/libxkcd"]
+	path = subprojects/libxkcd
+	url = https://github.com/tvale/libxkcd.git
