@@ -2,9 +2,9 @@
 Name=xkcdesktop
 GenericName=xkcd Viewer
 Comment=View xkcd comics on your desktop
-Categories=Education;Graphics;Science;Utility;Viewer;Feed;Internet;
+Categories=Network;Viewer;GTK;
 Exec=com.github.tvale.xkcdesktop
-Icon=application-default-icon
+Icon=com.github.tvale.xkcdesktop
 Terminal=false
 Type=Application
 Keywords=xkcd;comic;comics;viewer;

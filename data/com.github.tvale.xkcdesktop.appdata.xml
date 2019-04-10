@@ -3,14 +3,46 @@
 <component type="desktop">
   <id>com.github.tvale.xkcdesktop</id>
   <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
   <name>xkcdesktop</name>
-  <summary>View xkcd comics on your desktop</summary>
+  <summary>xkcd in the comfort of my desktop? Yes please.</summary>
   <description>
     <p>View xkcd comics on your desktop.</p>
+    <p>Features:</p>
+    <ul>
+      <li>View comic in its original size or fitted to the window.</li>
+      <li>Go to the previous, next, or latest, comic.</li>
+      <li>Use the search bar to jump to a specific comic.</li>
+      <li>Pick up from the comic you left off.</li>
+    </ul>
   </description>
+  <provides>
+    <binary>com.github.tvale.xkcdesktop</binary>
+  </provides>
+  <releases>
+    <release version="1.0" date="2019-04-09">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/tvale/xkcdesktop/raw/master/data/screenshot%402x.png</image>
+    </screenshot>
+  </screenshots>
+  <developer_name>Tiago Vale</developer_name>
+  <url type="homepage">https://github.com/tvale/xkcdesktop</url>
+  <url type="bugtracker">https://github.com/tvale/xkcdesktop/issues</url>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+    <content_attribute id="violence-fantasy">mild</content_attribute>
+    <content_attribute id="language-profanity">moderate</content_attribute>
+    <content_attribute id="language-humor">mild</content_attribute>
+  </content_rating>
   <custom>
-     <value key="x-appcenter-color-primary">#ffffff</value>
-     <value key="x-appcenter-color-primary-text">#000000</value>
-     <value key="x-appcenter-suggested-price">1.5</value>
+    <value key="x-appcenter-color-primary">#ffffff</value>
+    <value key="x-appcenter-color-primary-text">#000000</value>
+    <value key="x-appcenter-suggested-price">1.5</value>
   </custom>
 </component>

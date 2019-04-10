@@ -10,14 +10,14 @@ libxkcd_vapi = meson.get_compiler('vala').find_library('libxkcd', dirs: vapi_dir
 executable(
     meson.project_name(),
     sources: [
-        'src/Backend.vala',
-        'src/NavigationButtons.vala',
-        'src/SearchEntry.vala',
-        'src/ZoomMode.vala',
-        'src/Image.vala',
-        'src/Overlay.vala',
-        'src/MainWindow.vala',
-        'src/Application.vala'
+        join_paths('src', 'Backend.vala'),
+        join_paths('src', 'NavigationButtons.vala'),
+        join_paths('src', 'SearchEntry.vala'),
+        join_paths('src', 'ZoomMode.vala'),
+        join_paths('src', 'Image.vala'),
+        join_paths('src', 'Overlay.vala'),
+        join_paths('src', 'MainWindow.vala'),
+        join_paths('src', 'Application.vala')
     ],
     dependencies: [
         dependency('gtk+-3.0'),
@@ -34,6 +34,11 @@ install_data(
 )
 
 install_data(
+    join_paths('data', meson.project_name() + '.svg'),
+    install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', 'scalable', 'apps')
+)
+
+install_data(
     join_paths('data', meson.project_name() + '.appdata.xml'),
     install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
@@ -42,3 +47,5 @@ install_data (
     join_paths('data', meson.project_name() + '.gschema.xml'),
     install_dir: join_paths (get_option ('datadir'), 'glib-2.0', 'schemas'),
 )
+
+meson.add_install_script(join_paths('meson', 'post_install.py'))
